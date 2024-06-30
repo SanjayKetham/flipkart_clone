@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/flipkart_clone/static/css/main.2740ff6e.css",
+    "main.js": "/flipkart_clone/static/js/main.956f9d75.js",
+    "static/media/epictravel.jpg": "/flipkart_clone/static/media/epictravel.9ef5db44bd6acbf7f408.jpg",
+    "static/media/c2.jpg": "/flipkart_clone/static/media/c2.fff08ed550c3500a1780.jpg",
+    "static/media/explore.jpg": "/flipkart_clone/static/media/explore.d9f18fe004a3a299cf6f.jpg",
+    "static/media/visacard.svg": "/flipkart_clone/static/media/visacard.69e7ec34d1302e6b58b2cb1abe6b2f9c.svg",
+    "static/media/Mentshirt.jpeg": "/flipkart_clone/static/media/Mentshirt.983ad425bd5203a98d95.jpeg",
+    "static/media/c6.jpg": "/flipkart_clone/static/media/c6.2b74d86c6da8cd65717e.jpg",
+    "static/media/c3.jpg": "/flipkart_clone/static/media/c3.64bd65c9b1a7a6a5833d.jpg",
+    "static/media/c5.jpg": "/flipkart_clone/static/media/c5.766c810dcb59bba9fc12.jpg",
+    "static/media/c1.jpg": "/flipkart_clone/static/media/c1.d92106588e1d48968fb0.jpg",
+    "static/media/c4.jpg": "/flipkart_clone/static/media/c4.328e892dee8270ea1a75.jpg",
+    "static/media/nuts.jpeg": "/flipkart_clone/static/media/nuts.edddf65be9f4104327fb.jpeg",
+    "static/media/watch.jpg": "/flipkart_clone/static/media/watch.cc7ce5661f31752c32ea.jpg",
+    "static/media/des.jpeg": "/flipkart_clone/static/media/des.fc5ed4ce463126c0eb99.jpeg",
+    "static/media/cam.jpeg": "/flipkart_clone/static/media/cam.56478ccc0368ad5ec80e.jpeg",
+    "static/media/Beauty.png": "/flipkart_clone/static/media/Beauty.b668ac3661becee6da1c.png",
+    "static/media/Wheelers.png": "/flipkart_clone/static/media/Wheelers.7154fea2041f61cec72d.png",
+    "static/media/Grocery.webp": "/flipkart_clone/static/media/Grocery.f1c3e4505622e4279579.webp",
+    "static/media/Appliances.webp": "/flipkart_clone/static/media/Appliances.cacaad86c84f6ee06acc.webp",
+    "static/media/Travel.webp": "/flipkart_clone/static/media/Travel.2f41ac64fab99ff4c22c.webp",
+    "static/media/Mobiles.webp": "/flipkart_clone/static/media/Mobiles.905811916bf979e97474.webp",
+    "static/media/slick.svg": "/flipkart_clone/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/flipkart_clone/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/flipkart_clone/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/flipkart_clone/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/flipkart_clone/index.html",
+    "main.2740ff6e.css.map": "/flipkart_clone/static/css/main.2740ff6e.css.map",
+    "main.956f9d75.js.map": "/flipkart_clone/static/js/main.956f9d75.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2740ff6e.css",
+    "static/js/main.956f9d75.js"
+  ]
+}
