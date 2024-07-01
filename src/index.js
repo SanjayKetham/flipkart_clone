@@ -13,7 +13,7 @@ const VirtualRoot = ReactDOM.createRoot(root);
 
 VirtualRoot.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='flipkart_clone'>
       <MyProvider> 
         <Header/>
         <Routes>
