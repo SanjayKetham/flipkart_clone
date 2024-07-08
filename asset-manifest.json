@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/flipkart_clone/static/css/main.2740ff6e.css",
-    "main.js": "/flipkart_clone/static/js/main.18c65432.js",
+    "main.css": "/flipkart_clone/static/css/main.30b01274.css",
+    "main.js": "/flipkart_clone/static/js/main.4df041a9.js",
     "static/media/epictravel.jpg": "/flipkart_clone/static/media/epictravel.9ef5db44bd6acbf7f408.jpg",
     "static/media/c2.jpg": "/flipkart_clone/static/media/c2.fff08ed550c3500a1780.jpg",
     "static/media/explore.jpg": "/flipkart_clone/static/media/explore.d9f18fe004a3a299cf6f.jpg",
@@ -27,11 +27,11 @@
     "static/media/slick.ttf": "/flipkart_clone/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/flipkart_clone/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/flipkart_clone/index.html",
-    "main.2740ff6e.css.map": "/flipkart_clone/static/css/main.2740ff6e.css.map",
-    "main.18c65432.js.map": "/flipkart_clone/static/js/main.18c65432.js.map"
+    "main.30b01274.css.map": "/flipkart_clone/static/css/main.30b01274.css.map",
+    "main.4df041a9.js.map": "/flipkart_clone/static/js/main.4df041a9.js.map"
   },
   "entrypoints": [
-    "static/css/main.2740ff6e.css",
-    "static/js/main.18c65432.js"
+    "static/css/main.30b01274.css",
+    "static/js/main.4df041a9.js"
   ]
 }
