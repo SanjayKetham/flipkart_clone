@@ -31,8 +31,8 @@ const Home4 = () => {
             <p className='text-green-600'>Special offer</p>
           </span>
         </div>
-        <div className='flex-1 flex items-center justify-center mt-4 lg:mt-0'>
-          <img src={explore} alt="Explore Smartphones" className='h-60 sm:h-72 md:h-96 lg:h-full lg:block'/>
+        <div className='flex-1  flex items-center justify-center mt-4 lg:mt-0'>
+          <img src={explore} alt="Explore Smartphones" className='h-60 object-cover sm:h-72 md:h-96 lg:h-full lg:block'/>
         </div>
       </div>
     </div>

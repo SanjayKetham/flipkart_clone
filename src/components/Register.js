@@ -1,36 +1,46 @@
-import React, { useContext, useState } from 'react';
-import { Mycontext } from '../Mycontext';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useMutation } from '@apollo/client';
+import { REGISTER_USER } from '../mutations'; 
 
 const Register = () => {
-  const { users, setUsers } = useContext(Mycontext);
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    name: "",
-    age: "",
-    username: "",
-    password: "",
+    name: '',
+    email: '',
+    password: ''
   });
-  const [registered, setRegistered] = useState(false); // State to track registration status
 
-  function handleChange(e) {
+  const [registerUser, { loading, error }] = useMutation(REGISTER_USER);
+
+  const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevFormData) => ({
       ...prevFormData,
-      [name]: value,
+      [name]: value
     }));
-  }
+  };
 
-  const submitHandler = (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault();
-    setUsers([...users, formData]); // Add new user data to context
-    setRegistered(true); // Set registration status to true
-    navigate('/Login');
-    console.log(users);
+    try {
+      const { data } = await registerUser({
+        variables: {
+          name: formData.name,
+          email: formData.email,
+          password: formData.password
+        },
+      });
+      console.log('Registration successful:', data);
+      navigate('/login');
+    } catch (err) {
+      console.error('Error registering user:', err.message);
+      console.error('Error details:', err);
+    }
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
+    <div className="flex justify-center items-center min-h-screen bg-blue-100">
       <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
         <h2 className="text-2xl font-bold mb-6 text-center">Register</h2>
         <form onSubmit={submitHandler} className="space-y-4">
@@ -47,25 +57,13 @@ const Register = () => {
             />
           </div>
           <div>
-            <label htmlFor="age" className="block text-sm font-medium text-gray-700">Age:</label>
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email:</label>
             <input
               className="mt-1 block w-full border border-gray-300 rounded-md p-2"
-              type="number"
-              name="age"
-              id="age"
-              value={formData.age}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div>
-            <label htmlFor="username" className="block text-sm font-medium text-gray-700">Username:</label>
-            <input
-              className="mt-1 block w-full border border-gray-300 rounded-md p-2"
-              type="text"
-              name="username"
-              id="username"
-              value={formData.username}
+              type="email"
+              name="email"
+              id="email"
+              value={formData.email}
               onChange={handleChange}
               required
             />
@@ -84,14 +82,15 @@ const Register = () => {
           </div>
           <div>
             <button
-              className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition duration-300"
+              className="w-full bg-red-500 text-white py-2 rounded-md hover:bg-red-600 transition duration-300"
               type="submit"
+              disabled={loading}
             >
-              Register
+              {loading ? 'Registering...' : 'Register'}
             </button>
           </div>
         </form>
-        {registered && <p className="text-green-600 mt-2 text-center">Registered successfully!</p>}
+        {error && <p className="text-red-600 mt-2 text-center">Error: {error.message}</p>}
       </div>
     </div>
   );

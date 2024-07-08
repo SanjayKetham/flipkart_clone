@@ -6,24 +6,23 @@ import Login from './components/Login';
 import Register from './components/Register';
 import { MyProvider } from './Mycontext';
 import Home from './components/Home';
-
+import ApolloProvider from './ApolloProvider'; 
 
 const root = document.getElementById('root');
-const VirtualRoot = ReactDOM.createRoot(root);
 
-VirtualRoot.render(
+ReactDOM.createRoot(root).render(
   <React.StrictMode>
-    <BrowserRouter basename='flipkart_clone'>
-      <MyProvider> 
-        <Header/>
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/register' element={<Register/>}/>
-          <Route path='/login' element={<Login/>}/>
-          
-        </Routes>
-      </MyProvider>
-    </BrowserRouter>
+    <ApolloProvider>
+      <BrowserRouter basename='flipkart_clone'>
+        <MyProvider> 
+          <Header />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/register' element={<Register />} />
+            <Route path='/login' element={<Login />} />
+          </Routes>
+        </MyProvider>
+      </BrowserRouter>
+    </ApolloProvider>
   </React.StrictMode>
 );
-

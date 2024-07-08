@@ -74,8 +74,8 @@ const Home7 = () => {
             <h6 className='text-gray-500'>Social:</h6>
             <ul className='flex text-white'>
               <li><a href='https://www.facebook.com/flipkart'><CiFacebook className='text-white' size={20} /></a></li>
-              <li><FaXTwitter className='ml-6' size={20} /></li>
-              <li><PiYoutubeLogo className='ml-6' size={20} /></li>
+              <li><a href='https://x.com/flipkart'><FaXTwitter className='ml-6 text-white' size={20} /></a></li>
+              <li><a href='https://www.youtube.com/flipkart'><PiYoutubeLogo className='ml-6 text-white' size={20} /></a></li>
             </ul>
           </div>
         </div>

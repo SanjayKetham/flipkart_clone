@@ -11,11 +11,11 @@ export default function Header() {
     <div>
       <div className='py-2 lg:py-6 bg-[#047BD5]'>
         <div className="flex flex-wrap items-center justify-between px-4 lg:px-20">
-          <h3 className='text-2xl text-white flex items-center'><SiFlipkart className='text-yellow-400'/> Flipkart</h3>
+          <a href='/Home'><h3 className='text-2xl text-white flex items-center'><SiFlipkart className='text-yellow-400'/> Flipkart</h3></a>
           
           <div className='flex-grow flex items-center justify-center mt-2 lg:mt-0'>
-            <input type="text" className='w-full max-w-xs lg:max-w-md pr-8 pl-2 py-2 focus:outline-none' placeholder="Search for Product, Brands and More.." />
-            <button type="submit" className='px-4 py-2 font-bold text-white'><IoSearchOutline /></button>
+            <input type="text" className='w-full max-w-xs rounded-sm lg:max-w-md pr-8 pl-2 py-2 focus:outline-none' placeholder="Search for Product, Brands and More.." />
+            <button type="submit" className='px-4 py-2 font-bold text-white'><IoSearchOutline size={25} /></button>
           </div>
           
           <div className='flex items-center mt-2 lg:mt-0'>
